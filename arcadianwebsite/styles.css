@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
+
+html, body{
+    margin:0px;
+    padding: 0px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(167, 194, 226); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7095c5; 
+  }
+
+::selection {
+    background: #c5d7ec;}
+.navbar{
+    position:fixed;
+    width: 80vw;
+    height: 100px;
+    display:flex;
+    padding: 0 10vw;
+    margin-bottom:20px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+}
+.navbar-logo{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left:50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.navbar-logo a{
+    line-height: 80px;
+    margin:0px;
+    height: 80px;
+
+}
+
+.text1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size:20px;
+}
+.linknavbar{
+    text-emphasis: none;
+    text-decoration: none;
+    color: black;
+}
+.navbar-buttons{
+    position:center;
+    margin-right: 20px;
+   
+}
+.navbar-buttons ul{
+    position:center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+
+}
+
+.navbar-buttons ul li{
+    cursor: pointer;
+    line-height:50px;
+    padding: 10px;
+}
+.navbar-buttons ul li:hover{
+    transition-duration: 0.2s;
+    color:#297baa;
+}
+.nuestro-numero{
+    font-family: 'Kulim Park', sans-serif;
+    font-size:25px;
+    transition-duration: 0.2s;
+    margin-left: 10px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, #FFFFFF, rgb(214, 228, 255));
+    
+}
+@media screen and (max-width:420px){
+    .main{
+        flex-direction: column;
+    }
+}
+
+.main-side{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50vw;
+    justify-content: center;
+    padding:30px;
+}
+.img-webdesign{
+    user-select: none;
+    height: 35vw;
+    margin-right: 4vw;
+}
+
+.main-header{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.main-title{ 
+    margin:10px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size:5vw;
+}
+.highlight:hover{
+    color:rgb(56, 122, 153);
+    font-weight: 400;
+}
+.main-header p{
+    color:rgb(0, 0, 0);
+    text-align: center;
+    
+
+}
+.text2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size:20px;
+}
+.headerbuttons{
+    margin-top:20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.header-work{
+    padding:10px;
+    border: 2px solid black;
+    width: fit-content;
+}
+.header-work:hover{
+    background-color: black;
+    color:white;
+}
+.header-contact{
+    background-color: black;
+    color:white;
+    padding:10px;
+    border: 2px solid black;
+    width: fit-content;
+}
+.header-contact:hover{
+    background-color: transparent;
+    color:black;
+}
+
+
+.mid-section{
+    padding-left:100px;
+    padding-right: 100px;
+    height: 40vw;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    background: linear-gradient(to top, #FFFFFF, rgb(214, 228, 255))
+}
+
+.secondary{
+    padding-left:100px;
+    padding-right: 100px;
+    height: 80vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    background: linear-gradient(to bottom , #FFFFFF, rgb(214, 228, 255));
+}
+.secondary img{
+    width: 50vw;
+    height: 25vw;
+}
+.otrascosas{
+    margin-top:100px;
+    width:40vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+}
+
+.title{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size:3.5vw;
+    text-align: center;
+    position:bottom;
+}
+
+.side-text{
+    width: 40vw;
+    text-align: left;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-webdesigner{
+    width: 40vw;
+    height: 40vw;
+    user-select: none;
+}
+.creatingapp-blue{
+    height: 30vw;
+    margin-top:4vw;
+}
+.see-our{
+    text-align: center;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    
+}
+.text3{
+    border: 2px solid black;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size:25px;
+    cursor: pointer;
+}
+.mid-section2{
+    padding-left:100px;
+    padding-right: 100px;
+    height: 40vw;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #FFFFFF, rgb(214, 228, 255));
+}
+.graph{
+    width: 40vw;
+    height: 40vw;
+}
+.see-our1{
+    text-align: left;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    align-items:right;
+    justify-content: right;
+}
+.text3:hover{
+    background-color: black;
+    color:#FFFFFF;
+}
+
+.graph-alt{
+    width: 60vw;
+    height: fit-content;
+}
+.portfoliomain{
+    padding-left:100px;
+    padding-right: 100px;
+    height: 80vh;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, #FFFFFF, rgb(250, 252, 255));
+}
+.image-set-mid{
+    display: flex;
+    flex-direction:column;
+    justify-items: center;
+    justify-content: center;
+}
+.portfoliolayout{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-block-start: 2vw;
+    background: linear-gradient(to top, rgb(226, 236, 255), rgb(250, 252, 255));
+    padding-bottom: 10vw;
+
+}
+.empresas-portfolio{
+    margin: 2vw;
+    width: 28vw;
+    background-color: #75a0ad;
+    height: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(226, 238, 247);
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    text-emphasis: none;
+    text-decoration: none;
+}
+.tecnologias-showcase{
+    margin: 2vw;
+    width: 15vw;
+    background-color: #eceff0;
+    height: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(54, 54, 54);
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    text-emphasis: none;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.822);
+    background-blend-mode: overlay;
+}
+.tecnologias-showcase:hover{
+    background-color: rgba(199, 199, 199, 0);
+    background-blend-mode: soft-light;
+    color:transparent;
+    
+}
+.footer{
+    height: 5vw;
+    padding: 0px 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(226, 236, 255);
+    color: rgb(116, 116, 116);
+}
+.footer:hover{
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+    user-select: none;
+}
+.footer p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color:inherit;
+    font-weight: 700;
+    z-index: 3;
+}
+
+.footer p span{
+    font-weight: 300;
+}
+
+.react-back{
+    background-image:url(./icons/react.png) ;
+    background-position: center;
+    background-size: cover;
+}
+.node-back{
+    background-image:url(./icons/node.png) ;
+    background-position: center;
+    background-size: cover;
+}
+.flutter-back{
+    background-image:url(./icons/flutter.png) ;
+    background-position: center;
+    background-size: cover;
+}
+.mongo-back{
+    background-image:url(./icons/mongodb.png) ;
+    background-position: center;
+    background-size: cover;
+}
+.firebase-back{
+    background-image:url(./icons/firebase.png) ;
+    background-position: center;
+    background-size: cover;
+}
+.django-back{
+    background-image:url(./icons/django.png) ;
+    background-position: center;
+    background-size: cover;
+}
+.aws-back{
+    background-image:url(./icons/aws.png) ;
+    background-position: center;
+    background-size: cover;
+}
+.genexus-back{
+    background-image:url(./icons/genexus.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+.kubernetes-back{
+    background-image:url(./icons/kubernetes.PNG) ;
+    background-position: center;
+    background-size: cover;
+}
+
