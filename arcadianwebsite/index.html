@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Arcadian</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
+    <script src="https://unpkg.com/onscreen@1.3.4/dist/on-screen.umd.min.js"></script>
 </head>
+
 <body>
     <div class="navbar">
         <div class="navbar-logo">
@@ -16,9 +21,9 @@
         <div class="navbar-buttons">
             <ul>
                 <li class="text1"><a class="linknavbar" href="./portfolio.html">Portfolio</a></li>
-                <li class="text1">About</li>
+                <li class="text1"><a class="linknavbar" href="#about-section">About</a></li>
                 <li class="text1"><a class="linknavbar" href="./tech.html">Technologies</a></li>
-                <li class="text1">Contact</li>
+                <li class="text1"><a class="linknavbar" href="#contactoform">Contacto</a></li>
                 <li class="nuestro-numero">095 032 011</li>
             </ul>
         </div>
@@ -36,35 +41,129 @@
             </div>
         </div>
         <div class="main-side">
-            <img src="./media/webdesign.png" class="img-webdesign">
+            <div class="img-webdesign"></div>
         </div>
     </div>
 
     <div class="mid-section">
         <div class="side-text title">Todos tus requerimientos contemplados en un producto de software moderno y consistente.
-            <div class="see-our"><a class="linknavbar" href="./portfolio.html"><p class="text3">Portfolio</p></a></div>
+            <div class="see-our">
+                <a class="linknavbar" href="./portfolio.html">
+                    <p class="text3">Portfolio</p>
+                </a>
+            </div>
         </div>
-        <img class="creatingapp-blue" src="./media/creatingapp-blue.svg">
+        <div class="lottie-portfolio"></div>
     </div>
-    
+
     <div class="mid-section2">
         <div class="side-text title">Desarrollamos tus proyectos al más alto nivel en diseño y performance.
-            <div class="see-our1"><a class="linknavbar" href="./tech.html"><p class="text3">Tecnologías</p></a></div>
+            <div class="see-our1">
+                <a class="linknavbar" href="./tech.html">
+                    <p class="text3">Tecnologías</p>
+                </a>
+            </div>
         </div>
         <img src="./media/graph.svg" class="graph">
     </div>
 
     <div class="mid-section">
         <div class="side-text title">Únete a quienes confían en nuestro trabajo! Cuentanos tus requerimientos y especificaciones.
-            <div class="see-our"><a class="linknavbar" href="./portfolio.html"><p class="text3">Contacto</p></a></div>
+            <div class="see-our">
+                <a class="linknavbar" href="#contactoform">
+                    <p class="text3">Contacto</p>
+                </a>
+            </div>
         </div>
         <img class="creatingapp-blue" src="./media/chat.svg">
     </div>
 
+    <div class="mid-section2" id="about-section">
+        <div class="side-text title" style="font-size: 2.5vw;">Somos un equipo joven de desarrollo integral de software. Trabajamos implementando soluciones modernas y eficientes a punta de las tecnologías más sofisticadas, para darle al usuario la mejor experiencia.
+        </div>
+        <div class="lottie-about"></div>
+    </div>
+
+    <div class="mid-section">
+        <div class="side-text title" style="font-size: 3vw;">Nos especializamos en productos web y mobile escalables y versátiles, con el diseño, funcionalidad y performance en perfecta sinergia.
+        </div>
+        <div class="lottie-about2"></div>
+    </div>
+
+    <div class="pre-footer" id="contactoform">
+        <p>Quieres enviarnos un mensaje?</p>
+        <a>Completa con tus datos</a>
+        <form class="info">
+            <input type="text" placeholder="tu nombre">
+            <input type="text" placeholder="tu email">
+            <textarea placeholder="Descripción"></textarea>
+            <div class="submit-button">Enviar
+                <div class="button-progressbar"></div>
+                <img src="icons/check.svg" class="check-hidden">
+            </div>
+        </form>
+    </div>
     <div class="footer">
         <p>Arcadian SRL. All rights reserved <span>2019</span></p>
     </div>
 
-    
+    <script>
+        $(".submit-button").click(function() {
+            $(this).addClass("submit-active");
+            $(".button-progressbar").addClass("button-progressbar-active");
+            $(".check-hidden").addClass("check-show");
+        });
+
+        $(function() {
+
+            var os = new OnScreen({
+                tolerance: 0,
+                debounce: 100,
+                container: window
+            });
+
+            var animPortfolio = lottie.loadAnimation({
+                container: $('.lottie-portfolio')[0], // the dom element that will contain the animation
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,
+                path: './media/lottie/9295-full-movie-experience-including-music-news-video-weather-and-lots-of-entertainment.json' // the path to the animation json
+            });
+
+            lottie.loadAnimation({
+                container: $('.img-webdesign')[0], // the dom element that will contain the animation
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: './media/lottie/lf30_editor_yMVbcM.json' // the path to the animation json
+            });
+
+            lottie.loadAnimation({
+                container: $('.lottie-about')[0], // the dom element that will contain the animation
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: './media/lottie/13130-the-most-interactions.json' // the path to the animation json
+            });
+
+            lottie.loadAnimation({
+                container: $('.lottie-about2')[0], // the dom element that will contain the animation
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: './media/lottie/8306-programming-animation.json' // the path to the animation json
+            });
+
+            os.on('enter', '.lottie-portfolio', function(element, event) {
+                animPortfolio.play()
+            });
+
+            os.on('leave', '.lottie-portfolio', function(element, event) {
+                animPortfolio.stop()
+            });
+
+        });
+    </script>
 </body>
+
 </html>

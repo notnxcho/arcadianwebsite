@@ -1,212 +1,240 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kulim+Park&display=swap');
-
-html, body{
-    margin:0px;
+@import url('https://fonts.googleapis.com/css?family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap&subset=latin-ext');
+html,
+body {
+    margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
+
+
 /* width */
+
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 3px grey; 
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
     border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(167, 194, 226); 
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(167, 194, 226);
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #7095c5; 
-  }
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #7095c5;
+}
 
 ::selection {
-    background: #c5d7ec;}
-.navbar{
-    position:fixed;
+    background: #c5d7ec;
+}
+
+.navbar {
+    position: fixed;
     width: 80vw;
     height: 100px;
-    display:flex;
+    display: flex;
     padding: 0 10vw;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
+    z-index: 3;
 }
-.navbar-logo{
+
+.navbar-logo {
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     justify-items: center;
-    margin-left:50px;
+    margin-left: 50px;
     margin-top: 10px;
     cursor: pointer;
 }
-.navbar-logo a{
-    line-height: 80px;
-    margin:0px;
-    height: 80px;
 
+.navbar-logo a {
+    line-height: 80px;
+    margin: 0px;
+    height: 80px;
 }
 
-.text1{
+.text1 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size:20px;
+    font-size: 20px;
 }
-.linknavbar{
+
+.linknavbar {
     text-emphasis: none;
     text-decoration: none;
     color: black;
 }
-.navbar-buttons{
-    position:center;
+
+.navbar-buttons {
+    position: center;
     margin-right: 20px;
-   
 }
-.navbar-buttons ul{
-    position:center;
+
+.navbar-buttons ul {
+    position: center;
     display: flex;
     justify-content: center;
     flex-direction: row;
     list-style: none;
-
 }
 
-.navbar-buttons ul li{
+.navbar-buttons ul li {
     cursor: pointer;
-    line-height:50px;
+    line-height: 50px;
     padding: 10px;
 }
-.navbar-buttons ul li:hover{
+
+.navbar-buttons ul li:hover {
     transition-duration: 0.2s;
-    color:#297baa;
+    color: #297baa;
 }
-.nuestro-numero{
+
+.nuestro-numero {
     font-family: 'Kulim Park', sans-serif;
-    font-size:25px;
+    font-size: 25px;
     transition-duration: 0.2s;
     margin-left: 10px;
 }
-.main{
+
+.main {
     display: flex;
     flex-direction: row;
     background: linear-gradient(to bottom, #FFFFFF, rgb(214, 228, 255));
-    
 }
-@media screen and (max-width:420px){
-    .main{
+
+@media screen and (max-width:420px) {
+    .main {
         flex-direction: column;
     }
 }
 
-.main-side{
-    height:100vh;
+.main-side {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:50vw;
+    width: 50vw;
     justify-content: center;
-    padding:30px;
+    padding: 30px;
 }
-.img-webdesign{
+
+.img-webdesign {
     user-select: none;
     height: 35vw;
     margin-right: 4vw;
 }
 
-.main-header{
+.main-header {
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
-.main-title{ 
-    margin:10px;
+
+.main-title {
+    margin: 10px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size:5vw;
+    font-size: 5vw;
 }
-.highlight:hover{
-    color:rgb(56, 122, 153);
+
+.highlight:hover {
+    color: rgb(56, 122, 153);
     font-weight: 400;
 }
-.main-header p{
-    color:rgb(0, 0, 0);
-    text-align: center;
-    
 
+.main-header p {
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
-.text2{
+
+.text2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    font-size:20px;
+    font-size: 20px;
 }
-.headerbuttons{
-    margin-top:20px;
+
+.headerbuttons {
+    margin-top: 20px;
     padding: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
 
-}
-.header-work{
-    padding:10px;
+.header-work {
+    padding: 10px;
     border: 2px solid black;
     width: fit-content;
 }
-.header-work:hover{
+
+.header-work:hover {
     background-color: black;
-    color:white;
+    color: white;
 }
-.header-contact{
+
+.header-contact {
     background-color: black;
-    color:white;
-    padding:10px;
+    color: white;
+    padding: 10px;
     border: 2px solid black;
     width: fit-content;
 }
-.header-contact:hover{
+
+.header-contact:hover {
     background-color: transparent;
-    color:black;
+    color: black;
 }
 
-
-.mid-section{
-    padding-left:100px;
+.mid-section {
+    padding-left: 100px;
     padding-right: 100px;
     height: 40vw;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     background: linear-gradient(to top, #FFFFFF, rgb(214, 228, 255))
 }
 
-.secondary{
-    padding-left:100px;
+.secondary {
+    padding-left: 100px;
     padding-right: 100px;
     height: 80vh;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
-    background: linear-gradient(to bottom , #FFFFFF, rgb(214, 228, 255));
+    background: linear-gradient(to bottom, #FFFFFF, rgb(214, 228, 255));
 }
-.secondary img{
+
+.secondary img {
     width: 50vw;
     height: 25vw;
 }
-.otrascosas{
-    margin-top:100px;
-    width:40vw;
+
+.otrascosas {
+    margin-top: 100px;
+    width: 40vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -215,15 +243,15 @@ html, body{
     margin-left: 25px;
 }
 
-.title{
+.title {
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    font-size:3.5vw;
+    font-size: 3.5vw;
     text-align: center;
-    position:bottom;
+    position: bottom;
 }
 
-.side-text{
+.side-text {
     width: 40vw;
     text-align: left;
     height: 40vw;
@@ -231,80 +259,90 @@ html, body{
     flex-direction: column;
     justify-content: center;
 }
-.img-webdesigner{
+
+.img-webdesigner {
     width: 40vw;
     height: 40vw;
     user-select: none;
 }
-.creatingapp-blue{
+
+.creatingapp-blue {
     height: 30vw;
-    margin-top:4vw;
+    margin-top: 4vw;
 }
-.see-our{
+
+.see-our {
     text-align: center;
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    
 }
-.text3{
+
+.text3 {
     border: 2px solid black;
     width: fit-content;
     height: fit-content;
     padding: 10px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size:25px;
+    font-size: 25px;
     cursor: pointer;
 }
-.mid-section2{
-    padding-left:100px;
+
+.mid-section2 {
+    padding-left: 100px;
     padding-right: 100px;
     height: 40vw;
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
     justify-content: space-around;
     background: linear-gradient(to bottom, #FFFFFF, rgb(214, 228, 255));
 }
-.graph{
+
+.graph {
     width: 40vw;
     height: 40vw;
 }
-.see-our1{
+
+.see-our1 {
     text-align: left;
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    align-items:right;
+    align-items: right;
     justify-content: right;
 }
-.text3:hover{
+
+.text3:hover {
     background-color: black;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
-.graph-alt{
+.graph-alt {
     width: 60vw;
     height: fit-content;
 }
-.portfoliomain{
-    padding-left:100px;
+
+.portfoliomain {
+    padding-left: 100px;
     padding-right: 100px;
     height: 80vh;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     background: linear-gradient(to bottom, #FFFFFF, rgb(250, 252, 255));
 }
-.image-set-mid{
+
+.image-set-mid {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-items: center;
     justify-content: center;
 }
-.portfoliolayout{
+
+.portfoliolayout {
     display: flex;
     flex-direction: row;
     align-content: space-around;
@@ -313,9 +351,9 @@ html, body{
     padding-block-start: 2vw;
     background: linear-gradient(to top, rgb(226, 236, 255), rgb(250, 252, 255));
     padding-bottom: 10vw;
-
 }
-.empresas-portfolio{
+
+.empresas-portfolio {
     margin: 2vw;
     width: 28vw;
     background-color: #75a0ad;
@@ -324,14 +362,26 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:rgb(226, 238, 247);
+    color: rgb(245, 250, 255);
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     cursor: pointer;
     text-emphasis: none;
     text-decoration: none;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(45, 45, 46);
+    background-blend-mode: overlay;
+    transition-duration: 0.3s;
 }
-.tecnologias-showcase{
+
+.empresas-portfolio:hover {
+    background-blend-mode: initial;
+    color: transparent;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.tecnologias-showcase {
     margin: 2vw;
     width: 15vw;
     background-color: #eceff0;
@@ -340,7 +390,7 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:rgb(54, 54, 54);
+    color: rgb(54, 54, 54);
     font-size: 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -352,13 +402,14 @@ html, body{
     background-color: rgba(255, 255, 255, 0.822);
     background-blend-mode: overlay;
 }
-.tecnologias-showcase:hover{
+
+.tecnologias-showcase:hover {
     background-color: rgba(199, 199, 199, 0);
     background-blend-mode: soft-light;
-    color:transparent;
-    
+    color: transparent;
 }
-.footer{
+
+.footer {
     height: 5vw;
     padding: 0px 5vw;
     display: flex;
@@ -367,66 +418,262 @@ html, body{
     background-color: rgb(226, 236, 255);
     color: rgb(116, 116, 116);
 }
-.footer:hover{
+
+.footer:hover {
     color: rgb(63, 63, 63);
     cursor: pointer;
     user-select: none;
 }
-.footer p{
+
+.footer p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    color:inherit;
+    color: inherit;
     font-weight: 700;
     z-index: 3;
 }
 
-.footer p span{
+.footer p span {
     font-weight: 300;
 }
 
-.react-back{
-    background-image:url(./icons/react.png) ;
-    background-position: center;
-    background-size: cover;
-}
-.node-back{
-    background-image:url(./icons/node.png) ;
-    background-position: center;
-    background-size: cover;
-}
-.flutter-back{
-    background-image:url(./icons/flutter.png) ;
-    background-position: center;
-    background-size: cover;
-}
-.mongo-back{
-    background-image:url(./icons/mongodb.png) ;
-    background-position: center;
-    background-size: cover;
-}
-.firebase-back{
-    background-image:url(./icons/firebase.png) ;
-    background-position: center;
-    background-size: cover;
-}
-.django-back{
-    background-image:url(./icons/django.png) ;
-    background-position: center;
-    background-size: cover;
-}
-.aws-back{
-    background-image:url(./icons/aws.png) ;
-    background-position: center;
-    background-size: cover;
-}
-.genexus-back{
-    background-image:url(./icons/genexus.jpg) ;
-    background-position: center;
-    background-size: cover;
-}
-.kubernetes-back{
-    background-image:url(./icons/kubernetes.PNG) ;
+.react-back {
+    background-image: url(./icons/react.png);
     background-position: center;
     background-size: cover;
 }
 
+.node-back {
+    background-image: url(./icons/node.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.flutter-back {
+    background-image: url(./icons/flutter.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.mongo-back {
+    background-image: url(./icons/mongodb.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.firebase-back {
+    background-image: url(./icons/firebase.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.django-back {
+    background-image: url(./icons/django.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.aws-back {
+    background-image: url(./icons/aws.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.genexus-back {
+    background-image: url(./icons/genexus.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.kubernetes-back {
+    background-image: url(./icons/kubernetes.PNG);
+    background-position: center;
+    background-size: cover;
+}
+
+.pre-footer {
+    height: calc(65vh + 40px);
+    width: 100%;
+    background-color: #fff;
+    border-top: 5px solid rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 5vw;
+}
+
+.pre-footer p {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+    margin: 10px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pre-footer a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info input {
+    border-radius: 3px;
+    margin: 10px 0px;
+    width: 50vw;
+    height: 40px;
+    padding: 3px 10px;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    border-top: 1px solid rgb(32, 32, 32);
+    border-right: 1px solid rgb(32, 32, 32);
+    border-left: 1px solid rgb(32, 32, 32);
+    border-bottom: 1px solid rgb(32, 32, 32);
+}
+
+.info input:focus {
+    outline: 0;
+    border-top: 1px solid rgb(32, 32, 32);
+    border-right: 1px solid rgb(32, 32, 32);
+    border-left: 1px solid rgb(32, 32, 32);
+    border-bottom: 2px solid rgb(32, 32, 32);
+    transition-duration: 100ms;
+}
+
+.info textarea {
+    resize: none;
+    border-radius: 3px;
+    margin: 10px 0px;
+    width: 50vw;
+    height: max-content;
+    padding: 5px 10px;
+    min-height: 120px;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    border-top: 1px solid rgb(32, 32, 32);
+    border-right: 1px solid rgb(32, 32, 32);
+    border-left: 1px solid rgb(32, 32, 32);
+    border-bottom: 1px solid rgb(32, 32, 32);
+}
+
+.info textarea:focus {
+    outline: 0;
+    border-top: 1px solid rgb(32, 32, 32);
+    border-right: 1px solid rgb(32, 32, 32);
+    border-left: 1px solid rgb(32, 32, 32);
+    border-bottom: 2px solid rgb(32, 32, 32);
+    transition-duration: 100ms;
+}
+
+.submit-button {
+    width: 100%;
+    border-radius: 3px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-progressbar {
+    height: 40px;
+    width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+}
+
+.button-progressbar-active {
+    animation-name: progress;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition-duration: 200ms;
+}
+
+.submit-active {
+    background-color: rgb(255, 255, 255);
+    color: transparent;
+    user-select: none;
+    transition-duration: 200ms;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    25% {
+        width: 20%;
+    }
+    33% {
+        width: 20%;
+    }
+    50% {
+        width: 40%;
+    }
+    60% {
+        width: 40%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.check-hidden {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 3;
+    opacity: 0;
+}
+
+.check-show {
+    transition: all 0.6s ease-in-out 4.2s;
+    opacity: 1;
+}
+
+.lottie-about {
+    width: 30vw;
+    height: 30vw;
+    z-index: 0;
+}
+
+.lottie-about2 {
+    width: 30vw;
+    height: 30vw;
+    z-index: 0;
+}
+
+.lottie-portfolio {
+    height: 40vw;
+    width: 40vw;
+    z-index: 0;
+}
